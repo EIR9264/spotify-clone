@@ -8,3 +8,20 @@ mvnw text eol=lf
 # Windows 批处理文件强制 CRLF
 *.cmd text eol=crlf
 *.bat text eol=crlf
+
+# Explicitly declare text files you want to always be normalized and converted
+*.js text
+*.jsx text
+*.ts text
+*.tsx text
+*.json text
+*.md text
+*.css text
+*.html text
+*.yml text
+*.yaml text
+
+# Denote all files that are truly binary and should not be modified
+*.png binary
+*.jpg binary
+*.ico binary

@@ -42,3 +42,5 @@ next-env.d.ts
 
 #settings
 .vscode/
+
+password.txt
