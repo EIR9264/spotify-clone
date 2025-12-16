@@ -1,0 +1,77 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# 这是顶级的 EditorConfig 配置文件，编辑器将不会再向上级目录查找.editorconfig文件
+root = true
+
+# 对所有文件应用的核心规则
+[*]
+# 文件编码格式
+charset = utf-8
+
+# 缩进风格：space（空格）或 tab（制表符）
+indent_style = space
+
+# 缩进大小（字符数）
+indent_size = 2
+
+# 换行符格式：lf (Unix), cr (Mac), or crlf (Windows)
+# lf 是现代跨平台开发的事实标准
+end_of_line = lf
+
+# 在文件末尾插入一个空行
+# 这可以防止某些版本控制系统和命令行工具出现问题
+insert_final_newline = true
+
+# 移除行尾多余的空格
+trim_trailing_whitespace = true
+
+# 设置编辑器在 "软换行" 处显示的最大行长度
+# 注意：这通常不会强制硬换行，只是一个视觉提示
+max_line_length = 120
+
+
+# --- 特定文件类型的覆盖规则 ---
+
+# JavaScript, TypeScript, JSX, TSX, JSON, CSS, HTML, Vue, Svelte, Astro 等
+# 前端生态系统普遍使用 2 个空格缩进
+[*.{js,jsx,ts,tsx,json,css,scss,less,html,vue,svelte,astro,yaml,yml}]
+indent_style = space
+indent_size = 2
+
+# Markdown 文件
+[*.md]
+# Markdown 中为了可读性，有时关闭行尾空格清理
+trim_trailing_whitespace = false
+
+# Python 文件 - PEP 8 规范推荐使用 4 个空格
+[*.py]
+indent_style = space
+indent_size = 4
+
+# Go 文件 - Go 语言强制使用 tab
+[*.go]
+indent_style = tab
+indent_size = 4
+
+# Shell 脚本
+[*.sh]
+indent_style = space
+indent_size = 2
+
+# XML, SVG, 和相关文件
+[*.{xml,svg,csproj,props,targets,nuspec,xaml}]
+indent_style = space
+indent_size = 2
+
+# Makefile - 必须使用 Tab 进行缩进，否则会出错
+[Makefile]
+indent_style = tab
+
+# Bat 批处理文件
+[*.bat]
+end_of_line = crlf
+
+# PowerShell 脚本
+[*.ps1]
+indent_style = space
+indent_size = 4
